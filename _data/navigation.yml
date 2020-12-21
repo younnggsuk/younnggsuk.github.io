@@ -41,10 +41,23 @@ header:
       ko      : &KO       소개
       ko-KR   : *KO
       fr      : &FR       À propos
-      fr-BE   : *FR
+      fr-BE   : *FR  
       fr-CA   : *FR
       fr-CH   : *FR
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
     url: /about.html
+
+docs-ko:
+  - title: CS231n
+    children:
+    - title: 2. Image Classification
+      url: /2020/12/22/cs231n-1
+    - title: 3. Loss Function
+      url: /2020/12/22/cs231n-2
+  # - title: EECS 498/598
+  #   children:
+  #   - title:
+  #     url:
+
