@@ -1,7 +1,9 @@
 ---
 layout: article
-titles:
-  en      : &EN       About
+title: About
+# titles:
+#   en      : &EN       About
+key: page-about
 ---
 
 ## 이영석
