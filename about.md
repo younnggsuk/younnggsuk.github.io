@@ -1,9 +1,11 @@
 ---
 layout: article
+titles:
+  en      : &EN       About
 key: page-about
 ---
 
-# 이영석
+## 이영석
 
 컴퓨터비전과 머신러닝, 딥러닝에 관심이 많습니다.
 
