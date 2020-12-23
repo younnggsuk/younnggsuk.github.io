@@ -12,8 +12,8 @@ cs231n_eecs-ko:
     children:
     - title: 2. Image Classification
       url: /2020/12/01/cs231n-2
-    # - title: 3. Loss Function
-    #   url: /2020/12/22/cs231n-2
+    - title: 3. Loss Functions and Optimizations
+      url: /2020/12/03/cs231n-3
   # - title: EECS 498/598
   #   children:
   #   - title:
