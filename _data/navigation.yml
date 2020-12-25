@@ -14,6 +14,9 @@ cs231n_eecs-ko:
       url: /2020/12/01/cs231n-2
     - title: 3. Loss Functions and Optimizations
       url: /2020/12/03/cs231n-3
+    - title: 4. Backpropagation and Neural Networks
+      url: /2020/12/07/cs231n-4
+
   # - title: EECS 498/598
   #   children:
   #   - title:
