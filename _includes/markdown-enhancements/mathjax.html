@@ -13,5 +13,13 @@
 		_config.TeX = { equationNumbers: { autoNumber: "all" } };
 	{%- endif -%}
 	MathJax.Hub.Config(_config);
+	MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+		MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+		  cancel: ["Extension","cancel"],
+		  bcancel: ["Extension","cancel"],
+		  xcancel: ["Extension","cancel"],
+		  cancelto: ["Extension","cancel"]
+		});
+	  });
 </script>
 <script type="text/javascript" src="{{ _sources.mathjax }}" async></script>
