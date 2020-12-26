@@ -1,1 +1,1 @@
-# Youngsuk's study blog
+# 딥린이의 정리노트
