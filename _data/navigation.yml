@@ -16,6 +16,8 @@ cs231n_eecs-ko:
       url: /2020/12/03/cs231n-3
     - title: 4. Backpropagation and Neural Networks
       url: /2020/12/07/cs231n-4
+    - title: 5. Convolutional Neural Networks
+      url: /2020/12/09/cs231n-5
 
   # - title: EECS 498/598
   #   children:
