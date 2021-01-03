@@ -7,6 +7,18 @@ header:
       en      : &EN       About
     url: /about.html
 
+# 논문
+papers-ko:
+  - title: Object Detection
+    children:
+    - title: YOLO
+      url: /2020/07/08/yolo
+  # - title: EECS 498/598
+  #   children:
+  #   - title:
+  #     url:
+
+# CS231n & EECS 498/598
 cs231n_eecs-ko:
   - title: CS231n
     children:
@@ -23,19 +35,16 @@ cs231n_eecs-ko:
     - title: 7. Training Neural Networks 2
       url: /2020/12/13/cs231n-7
 
-
-  # - title: EECS 498/598
-  #   children:
-  #   - title:
-  #     url:
-
-papers-ko:
-  - title: Object Detection
+# 선형대수학
+linear_algebra-ko:
+  - title: 선형대수학 개념정리
     children:
-    - title: YOLO
-      url: /2020/07/08/yolo
+    - title: Linearity, Gauss Elimination, LU Decomposition, Inverse
+      url: /2021/01/03/linear_algebra-1
   # - title: EECS 498/598
   #   children:
   #   - title:
   #     url:
+
+
 
