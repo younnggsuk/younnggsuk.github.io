@@ -18,7 +18,7 @@ papers-ko:
   #   - title:
   #     url:
 
-# CS231n & EECS 498/598
+# CS231n & EECS 498-007 / 598-005
 cs231n_eecs-ko:
   - title: CS231n
     children:
@@ -34,6 +34,10 @@ cs231n_eecs-ko:
       url: /2020/12/11/cs231n-6
     - title: 7. Training Neural Networks 2
       url: /2020/12/13/cs231n-7
+  - title: EECS 498-007 / 598-005
+    children:
+    - title: 8. CNN Architectures
+      url: /2020/12/18/eecs-8
 
 # 선형대수학
 linear_algebra-ko:
