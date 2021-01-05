@@ -37,7 +37,7 @@ cs231n_eecs-ko:
   - title: EECS 498-007 / 598-005
     children:
     - title: 8. CNN Architectures
-      url: /2020/12/18/eecs-8
+      url: /2020/12/21/eecs-8
 
 # 선형대수학
 linear_algebra-ko:
