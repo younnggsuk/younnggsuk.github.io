@@ -3,7 +3,7 @@ title: Linearity, Gauss Elimination, LU Decomposition, Inverse
 key: 20210103
 sidebar:
   nav: linear_algebra-ko
-tags: 선형대수학
+tags: Mathematics Linear&nbspAlgebra
 ---
 
 # Linearity
