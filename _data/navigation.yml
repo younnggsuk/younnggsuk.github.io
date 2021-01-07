@@ -38,6 +38,8 @@ cs231n_eecs-ko:
     children:
     - title: 8. CNN Architectures
       url: /2020/12/21/eecs-8
+    - title: 12. Recurrent Networks
+      url: /2020/12/23/eecs-12
 
 # 선형대수학
 linear_algebra-ko:
