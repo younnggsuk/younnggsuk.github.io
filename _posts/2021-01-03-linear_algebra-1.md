@@ -1,10 +1,13 @@
 ---
-title: Linearity, Gauss Elimination, LU Decomposition, Inverse
+title: 1. Matrices and Gauss Elimination
 key: 20210103
 sidebar:
   nav: linear_algebra-ko
 tags: Mathematics Linear&nbspAlgebra
 ---
+
+이 글은 [한양대 이상화교수님의 선형대수 강의](https://www.youtube.com/playlist?list=PLSN_PltQeOyjDGSghAf92VhdMBeaLZWR3)를 듣고 교수님의 강의노트와 제 필기, 그리고 강의 교재인 [Gilbert Strang - Linear Algebra and its Applications 4/e](http://www.kyobobook.co.kr/product/detailViewEng.laf?barcode=9780534422004&ejkGb=ENG)을 참고하여 정리한 것입니다.
+{:.info}
 
 # Linearity
 
