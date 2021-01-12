@@ -3,7 +3,7 @@ title: 알고리즘 성능 분석
 key: 20210113
 sidebar:
   nav: data_structure_algorithm-ko
-tags: Data&nbspStructure Algorithm
+tags: Algorithm
 ---
 
 이 글은 [파이썬 알고리즘 인터뷰](https://github.com/onlybooks/algorithm-interview)와 [이것이 취업을 위한 코딩 테스트다 with 파이썬](https://github.com/ndb796/python-for-coding-test), 그리고 [위키백과](https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC) 등을 참고하여 정리하였습니다.

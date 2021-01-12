@@ -54,7 +54,7 @@ linear_algebra-ko:
 
 # 자료구조/알고리즘
 data_structure_algorithm-ko:
-  - title: 자료구조/알고리즘
+  - title: 알고리즘
     children:
     - title: Big-O Notation
       url: /2021/01/13/data_structure-1
