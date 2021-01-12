@@ -1,0 +1,173 @@
+---
+title: 알고리즘 성능 분석
+key: 20210113
+sidebar:
+  nav: data_structure_algorithm-ko
+tags: Data&nbspStructure Algorithm
+---
+
+이 글은 [파이썬 알고리즘 인터뷰](https://github.com/onlybooks/algorithm-interview)와 [이것이 취업을 위한 코딩 테스트다 with 파이썬](https://github.com/ndb796/python-for-coding-test), 그리고 [위키백과](https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC) 등을 참고하여 정리하였습니다.
+{:.info}
+
+# 복잡도(Complexity)
+
+**계산 복잡도 이론(Computational Complexity theory)**은 컴퓨터 과학에서 계산 문제를 푸는 알고리즘을 복잡도에 따라 분류하는 방법을 연구하는 분야이다.
+
+계산 복잡도 이론에서는 **복잡도(Complexity)**라는 개념이 나오는데, 이는 **알고리즘 성능 평가의 척도**라고 이해할 수 있으며 다음의 2가지가 있다.
+
+- **시간 복잡도 (Time Complexity)**
+  - 특정한 크기의 입력에 대해서 **알고리즘이 소요하는 시간**이 얼마나 되는가?
+- **공간 복잡도 (Space Complexity)**
+  - 특정한 크기의 입력에 대해서 **알고리즘이 사용하는 컴퓨터 자원(메모리)**이 얼마나 되는가?
+
+위의 2가지 개념을 코딩테스트 문제에서 생각해보면, 문제에서 주어지는 시간 제한이 시간복잡도에 해당하고 메모리 제한이 공간 복잡도에 해당하는 것으로 생각할 수 있다.  
+
+또한, 일반적으로 시간 복잡도와 공간 복잡도에는 다음과 같은 Trade-off 관계가 성립한다.
+
+- 시간 복잡도 $\uparrow$ 공간 복잡도 $\downarrow$
+- 시간 복잡도 $\downarrow$ 공간 복잡도 $\uparrow$
+
+## 시간 복잡도 (Time Complexity)
+
+시간 복잡도는 알고리즘을 수행하는데 걸리는 시간과 입력의 함수 관계로서 나타낸다. 이를 표현하는 대표적인 방법인 Big-O Notation에 대해 알아보고 간단한 예시를 통해 이해해보자.
+
+### Big-O Notation
+
+**Big-O Notation(빅오 표기법)**은 계산 복잡도를 표기하는 대표적인 방법으로, 상수항은 무시하고 최고차항만을 표기하는 방법이다. 다음의 두가지 예시를 통해 구체적으로 살펴보자.
+
+#### Example 1
+다음은 파이썬의 리스트에 index를 통해 원소에 접근하는 코드이다. 
+
+```python
+# N = 5
+datas = [1, 2, 3, 4, 5]
+
+# 2번째 index 원소에 접근
+print(datas[2])
+```
+
+이 경우, 리스트 원소의 수 (N=5)와 무관하게 한번에 접근이 가능하다는 것을 알 수 있다. 따라서, 이 경우에는 시간복잡도가 $O(1)$이 된다.
+
+#### Example 2
+
+다음은 정렬이 되지 않은 리스트에서 최댓값을 찾는 코드이다.
+
+```python
+# N = 5
+datas = [3, 2, 1, 5, 4]
+
+def find_max(datas):
+    # 첫번째 원소를 max_value에 저장
+    max_value = datas[0]
+
+    # 나머지 원소들과 비교하면서, 큰 값이 나오면 다시 max_value에 저장
+    for x in datas[1:]:
+        if x > max_value:
+            max_value = x
+
+    return max_value
+
+print(find_max(datas))
+```
+
+가장 큰 값을 찾기 위해서는 모든 원소를 서로 비교해야 한다. N의 값에 영향을 받는 비교 연산만을 생각해보면, 총 N=5개의 데이터가 있었는데 비교연산은 4번이 수행되었으므로 N-1번의 연산이 수행된다는 것을 알 수 있다.
+
+Big-O에서는 상수항을 무시하기 때문에, 이 경우에는 시간복잡도가 $O(N)$이 된다.
+
+
+### 자주 등장하는 시간복잡도
+
+위의 2가지 예에서 살펴본 $O(1)$, $O(N)$외에도 자주 등장하는 몇가지 시간복잡도가 있다. 이들을 빠른 순서대로 나열하면 다음과 같다. (시간복잡도는 낮을수록 더 빠르고 좋은 알고리즘이다.)
+
+$
+O(1) < O(log N) < O(N) < O(NlogN) < O(N^2) < O(2^N)
+$
+
+![comparison](/assets/data_structure_algorithm/ch4/comparison.jpeg){:width="500px"}
+
+### Worst / Average / Best Case
+
+앞에서 살펴본 두번째 예제의 리스트에서 최댓값을 찾는 경우를 생각해보자. 만약, 리스트가 오름차순 또는 내림차순으로 정렬되어 있었다면 다음과 같이 바로 최댓값을 찾을 수 있었을 것이다.(정렬이 되었는지에 대한 정보를 알 수 있다고 가정)
+
+- `datas = [1, 2, 3, 4, 5]` $\rightarrow$ `return datas[0]`
+- `datas = [5, 4, 3, 2, 1]` $\rightarrow$ `return datas[-1]`
+
+따라서, 이론적으로는 알고리즘의 성능을 Worst / Best / Aveage Case의 3가지로 구분하며 각각에 해당하는 표기법들은 다음과 같다.
+
+- Worst Case (최악 또는 상한)
+  - Big-O
+- Average Case (평균)
+  - Big-Theta ($\Theta$)
+- Best Case (최선 또는 하한)
+  - Big-Omega ($\Omega$)
+
+하지만 우리가 알고리즘을 분석할 때에는 **항상 주어진 시간안에 끝나는 것을 보장하기 위한 것을 주로 고려**하기 때문에 주로 Worst Case(Big-O)와 Average Case(Big-Theta)가 가장 많이 활용된다.
+
+또한, 이론상으로는 Worst와 Average를 분리하여 고려하지만 업계에서는 이 둘을 하나로 합쳐서 표현하려는 경향이 있기 때문에 **주로 Worst Case(Big-O)로 표현**하게 된다.
+
+다음은 몇가지 정렬 알고리즘들의 Worst / Average / Best Case를 나타낸 것이다.
+
+|---
+| 알고리즘 | Worst Case | Average Case | Best Case
+|:-:|:-:|:-:|:-:
+| Quick Sort | $O(N^2)$ | $O(NlogN)$ | $O(NlogN)$
+| Merge Sort | $O(NlogN)$ | $O(NlogN)$ | $O(NlogN)$
+| Bubble Sort | $O(N^2)$ | $O(N^2)$ | $O(N)$
+| Insertion Sort | $O(N^2)$ | $O(N^2)$ | $O(N)$
+| Selection Sort | $O(N^2)$ | $O(N^2)$ | $O(N^2)$
+
+## 공간 복잡도 (Space Complexity)
+
+요즘에는 컴퓨터의 메모리 공간이 충분하기 때문에 보통 시간복잡도를 우선시 하지만, 아예 고려하지 않으면 안된다.
+
+대부분의 코딩테스트에서는 메모리 사용량을 128 ~ 512MB 정도로 제한하므로, 파이썬의 리스트 크기가 1000만개 이상을 넘어섰다면 알고리즘의 공간복잡도를 고려해볼 필요가 있다.
+
+공간복잡도도 시간복잡도와 마찬가지로 Big-O Notation으로 나타내며, 다음의 두가지 구체적인 예시를 통해 살펴보자.
+
+#### Example 1
+
+다음은 팩토리얼을 계산하는 코드이다.
+
+```python
+def factorial(n):
+    result = 1
+
+    # 2~n까지 순서대로 곱해준다.
+    for i in range(2, n+1):
+        result = result * i
+
+    return result
+```
+
+n이 커지더라도 result라는 변수에 계속해서 값을 덮어쓰고 있기 때문에 사용하는 메모리 공간은 그대로이다. 따라서, 공간복잡도는 $O(1)$이 된다.
+
+
+#### Example 2
+
+다음은 재귀함수로 팩토리얼 함수를 구현한 코드이다.
+
+```python
+def factorial(n):
+    result = 1
+
+    if n > 1:
+        return n * factorial(n-1)
+
+    return result
+```
+재귀함수의 경우, 계속해서 함수가 호출됨에 따라 result가 만들어지게 되므로 메모리 사용량이 계속해서 늘어나게 된다.(더 자세히는 함수의 복귀 주소를 포함한 정보들이 계속해서 스택에 쌓이게 된다.) 따라서, 공간복잡도가 $O(N)$이 된다.
+
+
+## 코드 실행시간 측정
+
+파이썬의 `time`모듈을 사용하면, 알고리즘의 실행시간을 측정할 수 있다. 다음은 수행시간을 측정하는 코드의 예이다.
+
+```python
+import time
+
+start_time = time.time() # 시작 시간 측정
+
+# 알고리즘 수행
+elapsed_time = time.time() - start_time # 소요된 시간 = 현재시간 - 시작 시간
+print(f"Elapsed time : {elapsed_time} [sec]") # 소요 시간 출력
+```
