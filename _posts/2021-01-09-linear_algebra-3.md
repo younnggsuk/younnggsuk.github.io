@@ -1,5 +1,5 @@
 ---
-title: 3. Orthogonality
+title: Orthogonality
 key: 20210109
 sidebar:
   nav: linear_algebra-ko

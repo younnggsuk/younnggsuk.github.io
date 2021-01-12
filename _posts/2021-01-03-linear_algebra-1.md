@@ -1,5 +1,5 @@
 ---
-title: 1. Matrices and Gauss Elimination
+title: Matrices and Gauss Elimination
 key: 20210103
 sidebar:
   nav: linear_algebra-ko

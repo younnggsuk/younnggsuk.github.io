@@ -1,5 +1,5 @@
 ---
-title: 2. Vector Spaces
+title: Vector Spaces
 key: 20210108
 sidebar:
   nav: linear_algebra-ko

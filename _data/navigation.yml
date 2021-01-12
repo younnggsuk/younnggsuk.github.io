@@ -45,11 +45,9 @@ cs231n_eecs-ko:
 linear_algebra-ko:
   - title: 선형대수학 개념정리
     children:
-    - title: 1. Matrices and Gauss Elimination
+    - title: Matrices and Gauss Elimination
       url: /2021/01/03/linear_algebra-1
-    - title: 2. Vector Spaces
+    - title: Vector Spaces
       url: /2021/01/08/linear_algebra-2
-    - title: 3. Orthogonality
+    - title: Orthogonality
       url: /2021/01/09/linear_algebra-3
-
-
