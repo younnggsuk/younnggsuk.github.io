@@ -40,6 +40,8 @@ cs231n_eecs-ko:
       url: /2020/12/21/eecs-8
     - title: 12. Recurrent Networks
       url: /2020/12/23/eecs-12
+    - title: 13. Attention
+      url: /2021/01/15/eecs-13
 
 # 선형대수학
 linear_algebra-ko:
