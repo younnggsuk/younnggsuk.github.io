@@ -13,6 +13,10 @@ papers-ko:
     children:
     - title: YOLO
       url: /2020/07/08/yolo
+  - title: Semantic Segmentation
+    children:
+    - title: Fully Convolutional Networks for Semantic Segmentation
+      url: /2021/01/17/fully_convolutional_networks_for_semantic_segmentation
   # - title: EECS 498/598
   #   children:
   #   - title:
