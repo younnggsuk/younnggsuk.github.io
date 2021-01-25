@@ -18,7 +18,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 본 논문에서 제안하는 **Fully Convolutional Network(FCN)**에 대해 요약하면 다음과 같다.
 - **Convolutional network만으로 구성**된 네트워크이며, **end-to-end로 학습**한다.
 - **어떠한 크기의 입력이 들어와도 같은 크기의 출력으로 semantic segmentation을 수행**할 수 있다.
-- PASCAL VOC, NYUDv2, SIFT Flow에서 SOTA를 기록하였고 inference 시간은 5배나 빨랐다.
+- PASCAL VOC, NYUDv2, SIFT Flow에서 SOTA를 기록하였고 inference 시간은 5배나 빠르다.
 - AlexNet, VGGNet과 같은 **classification model을 fully convolutional network로 변환**하고, segmenation task를 수행할 수 있도록 **fine-tuning**하였다.
 - **깊은 layer의 semantic information과 얕은 layer의 appearance information을 결합**하여 정확하고 정밀한 segmentation을 수행한다. 
 
