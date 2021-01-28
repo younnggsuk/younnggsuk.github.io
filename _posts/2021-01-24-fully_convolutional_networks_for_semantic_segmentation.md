@@ -129,8 +129,10 @@ Patchwise training은 (whole image를 학습하는) fully convolutional training
 
 또한, patchwise training과 fully convolutional training에서의 output을 계산하는 방법을 비교하면 다음과 같다.
 
-- Patchwise training은 whole image에서 subimage를 crop하고, 이 subimage에 대해 독립적으로 forward pass를 수행하여 output을 계산한다{:width="600px" style="border:1px solid black"}
- 낼 수 있다**고 주장한다.
+- Patchwise training은 whole image에서 subimage를 crop하고, 이 subimage에 대해 독립적으로 forward pass를 수행하여 output을 계산
+- Fully convolutional training은 whole image에서 forward pass를 수행하여 모든 subimage에서의 output을 계산
+
+따라서, 본 논문에서는 fully convolutional 방법의 **whole image에서 계산된 모든 subimage의 output중에서 몇개의 output만을 사용해서 backward pass를 수행하면 patchwise training에서의 장점은 취하면서 더욱 빠르게 학습을 할 수 있다**고 주장한다. (즉, 전체 output에서 backward pass를 수행할 output을 sampling하는 것이므로, 논문에서는 loss sampling이라고 불렀음)
 
 위의 내용들을 정리하면, Patchwise training에서의 장점은 fully convolutional training에서 다음과 같이 얻을 수 있다.
 - **Class imbalance 문제는 loss에 weight를 추가**하면 된다.
