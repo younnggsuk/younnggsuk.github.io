@@ -24,7 +24,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 # Introduction
 
-![fig_1](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_1.png){:width="600px" style="border:1px solid black"}
+![fig_1](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_1.png){:width="550px" style="border:1px solid black"}
 
 - **FCN**은 CNN을 통과하여 나온 coarse label map에서 bilinear interpolation으로 구현된 **단순한 deconvolution**을 수행하므로, 다음과 같은 **한계점**들이 있다.
   - 고정된 크기의 receptive field로 인해 **single scale의 object밖에 다루지 못한다.**
@@ -45,7 +45,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 ## Architecture
 
-![fig_2](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_2.png){:width="600px" style="border:1px solid black"}
+![fig_2](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_2.png){:style="border:1px solid black"}
 
 - *Figure 2*는 DeconvNet의 전체 구조를 보여준다.
   - **Convolution network는 feature extractor**로서 입력 이미지를 다차원의 feature representation으로 변환한다.
@@ -75,7 +75,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 ### Analysis of Deconvolution Network
 
-![fig_4](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_4.png){:width="600px" style="border:1px solid black"}
+![fig_4](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_4.png){:style="border:1px solid black"}
 
 - Deconvolutional layer의 activation을 visualize해보면, object의 structure를 coarse에서 fine의 단계로 재구성한다는 것을 알 수 있다. (**hierarchical structure of deconvolutional layers**)
   - **하위 layer**의 filter는 **전체적인 구성(위치, 모양 및 영역)**을 생성한다.
@@ -86,7 +86,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
   - **Deconvolutional layer**의 학습된 filter는 **class-specific**한 shape를 capture한다.
     - *Figure 4의 (b), (d), (f), (h), (j)*에서 **class와 연관된 영역의 activation은 더 강해지고 다른 영역의 노이즈들은 줄어드는 것**을 확인할 수 있다.
 
-![fig_5](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_5.png){:width="600px" style="border:1px solid black"}
+![fig_5](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_5.png){:width="500px" style="border:1px solid black"}
 
 - *Figure 5*는 DeconvNet이 unpooling과 deconvolution을 통해 **FCN보다 더욱 정확하고(precise) 세밀한(dense) activation을 생성**할 수 있다는 것을 보여준다.
 
@@ -114,7 +114,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
     - Ground-truth annotation을 사용해 **object가 정중앙에 위치**하도록 bounding box를 생성하고 이를 crop하는 방식으로 학습 데이터(object instance)를 구성하여 학습한다.
     - **Object의 위치 및 크기 변화를 제한**함으로서 search space를 줄일 수 있기 때문에, 학습이 더 쉬워지고 **적은 데이터로도 네트워크를 훈련**시킬 수 있게 된다.
   - Second stage (**어려운 데이터**로 학습)
-    - **[Edge Boxes](https://www.microsoft.com/en-us/research/publication/edge-boxes-locating-object-proposals-from-edges/)**에서 제안한 방법을 통해 **proposal들을 생성**하는 방식으로 학습 데이터를 구성하여 학습한다.
+    - **[Edge Boxes](microsoft.com/en-us/research/publication/edge-boxes-locating-object-proposals-from-edges)**에서 제안한 방법을 통해 **proposal들을 생성**하는 방식으로 학습 데이터를 구성하여 학습한다.
     - 이때, 실제 정답에서의 segmentation(ground-truth segmentation)과 잘 겹치는 proposal들만을 사용한다. (IoU가 0.5이상인 proposal들)
     - **Object의 위치 및 크기가 많이 달라지기** 때문에 학습은 더 어려워지지만, proposal의 misalignment에 대해 **네트워크가 더욱 robust하도록** 만들어준다.
 
@@ -147,7 +147,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 #### Network Configuration
 
-![table_2](/assets/learning_deconvolution_network_for_semantic_segmentation/table_2.png){:width="600px" style="border:1px solid black"}
+![table_2](/assets/learning_deconvolution_network_for_semantic_segmentation/table_2.png){:width="550px" style="border:1px solid black"}
 
 - DeconvNet의 네트워크 구성은 *Table 2*와 같다.
   - 여기서 **fc6, fc7**은 fully connected가 아니라 **1x1 convolution layer**이다.
@@ -165,7 +165,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
     - Training image의 각 object별로 object의 크기와 딱맞는 bounding box를 그린 후, local context를 포함시키기 위해 bounding box의 크기를 1.2배로 키워주고 해당 영역을 crop하여 training data를 구성한다.
     - Crop한 영역에서 object는 항상 중앙에 위치하고, 나머지 픽셀들은 모두 background이다.
   - Second stage
-    - [Edge Boxes](https://www.microsoft.com/en-us/research/publication/edge-boxes-locating-object-proposals-from-edges/)에서 제안한 방법으로 instance(proposal)를 생성하여 training data를 구성한다. (이때는 한 instance에 여러 class label이 있을 수 있다.)
+    - [Edge Boxes](microsoft.com/en-us/research/publication/edge-boxes-locating-object-proposals-from-edges/)에서 제안한 방법으로 instance(proposal)를 생성하여 training data를 구성한다. (이때는 한 instance에 여러 class label이 있을 수 있다.)
     - First stage에서와 동일한 방법으로 local context를 포함시켜준다.
   - 위의 두 dataset에서 데이터 수가 부족한 class들에 대해서는 데이터를 중복해서 사용하는 방식으로 balance를 맞춰주었다.
   - Data augmentation 방법으로는 각 instance(proposal)를 250 $\times$ 250 크기로 변환한 다음 224 $\times$ 224 크기로 randomly crop하는 방식을 사용하였다.
@@ -190,18 +190,18 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 ## Evaluation on Pascal VOC
 
-![table_1](/assets/learning_deconvolution_network_for_semantic_segmentation/table_1.png){:width="600px" style="border:1px solid black"}
+![table_1](/assets/learning_deconvolution_network_for_semantic_segmentation/table_1.png){:style="border:1px solid black"}
 
 - *Table 1*은 PASCAL VOC 2012 test set에서 다른 모델들과의 성능을 비교한 것이다.
 - FCN-8s와의 앙상블 및 CRF를 적용한 모델(EDeconvNet + CRF)이 가장 높은 성능을 기록하였다.
   - [CRF](https://arxiv.org/abs/1210.5644)은 약 1%의 성능을 향상시켜 주었다.
   - FCN-8s와의 **앙상블(EDeconvNet)은** 단일 모델(FCN8s, DeconvNet)의 **성능을 크게 향상**시켜 주었다.
 
-![fig_6](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_6.png){:width="600px" style="border:1px solid black"}
+![fig_6](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_6.png){:style="border:1px solid black"}
 
 - *Figure 6*는 **instance-wise prediction이 정확한 segmentation에 도움이 된다**는 것을 보여준다. (proposal의 수가 증가할수록 더 세세한 구조를 인식할 수 있음)
 
-![fig_7](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_7.png){:width="600px" style="border:1px solid black"}
+![fig_7](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_7.png){:style="border:1px solid black"}
 
 - *Figure 7*은 DeconvNet, FCN, EDeconvNet, EDeconvNet + CRF를 각각 비교한 것이다.
   - **FCN**은 **아주 크거나 작은 object**에서 성능이 좋지 못하다. (*Figure 7(a)*)
