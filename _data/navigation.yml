@@ -15,8 +15,10 @@ papers-ko:
       url: /2020/07/08/yolo
   - title: Semantic Segmentation
     children:
-    - title: Fully Convolutional Networks for Semantic Segmentation
+    - title: Fully Convolutional Networks (FCN)
       url: /2021/01/24/fully_convolutional_networks_for_semantic_segmentation
+    - title: Deconvolution Network (DeconvNet)
+      url: /2021/02/03/learning_deconvolution_network_for_semantic_segmentation
   # - title: EECS 498/598
   #   children:
   #   - title:
