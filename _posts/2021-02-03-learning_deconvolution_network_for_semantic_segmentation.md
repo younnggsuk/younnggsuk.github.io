@@ -24,7 +24,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 # Introduction
 
-![fig_1](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_1.png)
+![fig_1](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_1.png){:width="600px" style="border:1px solid black"}
 
 - **FCN**은 CNN을 통과하여 나온 coarse label map에서 bilinear interpolation으로 구현된 **단순한 deconvolution**을 수행하므로, 다음과 같은 **한계점**들이 있다.
   - 고정된 크기의 receptive field로 인해 **single scale의 object밖에 다루지 못한다.**
@@ -45,7 +45,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 ## Architecture
 
-![fig_2](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_2.png)
+![fig_2](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_2.png){:width="600px" style="border:1px solid black"}
 
 - *Figure 2*는 DeconvNet의 전체 구조를 보여준다.
   - **Convolution network는 feature extractor**로서 입력 이미지를 다차원의 feature representation으로 변환한다.
@@ -61,21 +61,21 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 ### Unpooling
 
-![unpooling](/assets/learning_deconvolution_network_for_semantic_segmentation/unpooling.png)
+![unpooling](/assets/learning_deconvolution_network_for_semantic_segmentation/unpooling.png){:width="600px" style="border:1px solid black"}
 
 - Convolution network에서의 pooling을 역으로 다시 수행하여 원본 크기의 activation을 재구성한다.
 - **Max pooling에서 최댓값으로 활성화 되었던 위치를 저장**하여 unpooling에 사용한다.
 
 ### Deconvolution
 
-![deconvolution](/assets/learning_deconvolution_network_for_semantic_segmentation/deconvolution.png)
+![deconvolution](/assets/learning_deconvolution_network_for_semantic_segmentation/deconvolution.png){:width="600px" style="border:1px solid black"}
 
 - FCN과 같이 본 논문에서도 deconvolution으로 표기하였지만, 더 정확히는 **transposed convolution**이다.
 - Convolution과 반대로 single input activation(sparse)에서 multiple output activation(dense)을 생성한다.
 
 ### Analysis of Deconvolution Network
 
-![fig_4](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_4.png)
+![fig_4](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_4.png){:width="600px" style="border:1px solid black"}
 
 - Deconvolutional layer의 activation을 visualize해보면, object의 structure를 coarse에서 fine의 단계로 재구성한다는 것을 알 수 있다. (**hierarchical structure of deconvolutional layers**)
   - **하위 layer**의 filter는 **전체적인 구성(위치, 모양 및 영역)**을 생성한다.
@@ -86,7 +86,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
   - **Deconvolutional layer**의 학습된 filter는 **class-specific**한 shape를 capture한다.
     - *Figure 4의 (b), (d), (f), (h), (j)*에서 **class와 연관된 영역의 activation은 더 강해지고 다른 영역의 노이즈들은 줄어드는 것**을 확인할 수 있다.
 
-![fig_5](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_5.png)
+![fig_5](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_5.png){:width="600px" style="border:1px solid black"}
 
 - *Figure 5*는 DeconvNet이 unpooling과 deconvolution을 통해 **FCN보다 더욱 정확하고(precise) 세밀한(dense) activation을 생성**할 수 있다는 것을 보여준다.
 
@@ -147,7 +147,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 #### Network Configuration
 
-![table_2](/assets/learning_deconvolution_network_for_semantic_segmentation/table_2.png)
+![table_2](/assets/learning_deconvolution_network_for_semantic_segmentation/table_2.png){:width="600px" style="border:1px solid black"}
 
 - DeconvNet의 네트워크 구성은 *Table 2*와 같다.
   - 여기서 **fc6, fc7**은 fully connected가 아니라 **1x1 convolution layer**이다.
@@ -190,18 +190,18 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 ## Evaluation on Pascal VOC
 
-![table_1](/assets/learning_deconvolution_network_for_semantic_segmentation/table_1.png)
+![table_1](/assets/learning_deconvolution_network_for_semantic_segmentation/table_1.png){:width="600px" style="border:1px solid black"}
 
 - *Table 1*은 PASCAL VOC 2012 test set에서 다른 모델들과의 성능을 비교한 것이다.
 - FCN-8s와의 앙상블 및 CRF를 적용한 모델(EDeconvNet + CRF)이 가장 높은 성능을 기록하였다.
   - [CRF](https://arxiv.org/abs/1210.5644)은 약 1%의 성능을 향상시켜 주었다.
   - FCN-8s와의 **앙상블(EDeconvNet)은** 단일 모델(FCN8s, DeconvNet)의 **성능을 크게 향상**시켜 주었다.
 
-![fig_6](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_6.png)
+![fig_6](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_6.png){:width="600px" style="border:1px solid black"}
 
 - *Figure 6*는 **instance-wise prediction이 정확한 segmentation에 도움이 된다**는 것을 보여준다. (proposal의 수가 증가할수록 더 세세한 구조를 인식할 수 있음)
 
-![fig_7](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_7.png)
+![fig_7](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_7.png){:width="600px" style="border:1px solid black"}
 
 - *Figure 7*은 DeconvNet, FCN, EDeconvNet, EDeconvNet + CRF를 각각 비교한 것이다.
   - **FCN**은 **아주 크거나 작은 object**에서 성능이 좋지 못하다. (*Figure 7(a)*)
