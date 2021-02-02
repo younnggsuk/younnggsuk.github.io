@@ -10,7 +10,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 <img src="/assets/learning_deconvolution_network_for_semantic_segmentation/deconvnet_title.png" alt="deconvnet">
 </p>
 
-이 글은 [Learning Deconvolution Network for Semantic Segmentation](https://arxiv.org/abs/1505.04366) 논문을 읽고 정리한 것입니다. 이 글에 있는 대부분의 사진들은 논문에서 가져온 것임을 밝힙니다.
+이 글은 <a href="https://arxiv.org/abs/1505.04366" target="_blank" rel="noopener noreferrer">Learning Deconvolution Network for Semantic Segmentation</a> 논문을 읽고 정리한 것입니다. 이 글에 있는 대부분의 사진들은 논문에서 가져온 것임을 밝힙니다.
 {:.info}
 
 # Abstract
@@ -194,7 +194,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 - *Table 1*은 PASCAL VOC 2012 test set에서 다른 모델들과의 성능을 비교한 것이다.
 - FCN-8s와의 앙상블 및 CRF를 적용한 모델(EDeconvNet + CRF)이 가장 높은 성능을 기록하였다.
-  - [CRF](https://arxiv.org/abs/1210.5644)은 약 1%의 성능을 향상시켜 주었다.
+  - <a href="https://arxiv.org/abs/1210.5644" target="_blank" rel="noopener noreferrer">CRF</a>는 약 1%의 성능을 향상시켜 주었다.
   - FCN-8s와의 **앙상블(EDeconvNet)은** 단일 모델(FCN8s, DeconvNet)의 **성능을 크게 향상**시켜 주었다.
 
 ![fig_6](/assets/learning_deconvolution_network_for_semantic_segmentation/fig_6.png){:style="border:1px solid black"}
