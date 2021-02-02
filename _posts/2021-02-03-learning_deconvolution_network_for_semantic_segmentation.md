@@ -114,7 +114,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
     - Ground-truth annotation을 사용해 **object가 정중앙에 위치**하도록 bounding box를 생성하고 이를 crop하는 방식으로 학습 데이터(object instance)를 구성하여 학습한다.
     - **Object의 위치 및 크기 변화를 제한**함으로서 search space를 줄일 수 있기 때문에, 학습이 더 쉬워지고 **적은 데이터로도 네트워크를 훈련**시킬 수 있게 된다.
   - Second stage (**어려운 데이터**로 학습)
-    - **[Edge Boxes](microsoft.com/en-us/research/publication/edge-boxes-locating-object-proposals-from-edges)**에서 제안한 방법을 통해 **proposal들을 생성**하는 방식으로 학습 데이터를 구성하여 학습한다.
+    - **<a href="https://www.microsoft.com/en-us/research/publication/edge-boxes-locating-object-proposals-from-edges/" target="_blank" rel="noopener noreferrer">Edge Boxes</a>**에서 제안한 방법을 통해 **proposal들을 생성**하는 방식으로 학습 데이터를 구성하여 학습한다.
     - 이때, 실제 정답에서의 segmentation(ground-truth segmentation)과 잘 겹치는 proposal들만을 사용한다. (IoU가 0.5이상인 proposal들)
     - **Object의 위치 및 크기가 많이 달라지기** 때문에 학습은 더 어려워지지만, proposal의 misalignment에 대해 **네트워크가 더욱 robust하도록** 만들어준다.
 
@@ -127,7 +127,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 - Object에 대한 misalignment나 cluttered background로 인해 발생하는 몇몇 proposal에 대한 부정확한 prediction으로 인한 **noise는 aggregation 과정에서 완화**할 수 있다.
   - 여러 proposal(instance)로부터 생성된 output score map들에 **pixel-wise maximum 또는 average**를 취하는 방식으로 aggregation을 수행한다.
-- Aggregation을 수행한 결과에 **softmax** 함수를 적용하면 **pixel-wise class conditional probability map**을 얻을 수 있고, 여기에 마지막으로 **[fully-connected CRF](https://arxiv.org/abs/1210.5644)**를 적용하면 **최종 pixel-wise label map**을 얻을 수 있다.
+- Aggregation을 수행한 결과에 **softmax** 함수를 적용하면 **pixel-wise class conditional probability map**을 얻을 수 있고, 여기에 마지막으로 **<a href="https://arxiv.org/abs/1210.5644" target="_blank" rel="noopener noreferrer">fully-connected CRF</a>**를 적용하면 **최종 pixel-wise label map**을 얻을 수 있다.
 
 ## Ensemble with FCN
 
@@ -165,7 +165,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
     - Training image의 각 object별로 object의 크기와 딱맞는 bounding box를 그린 후, local context를 포함시키기 위해 bounding box의 크기를 1.2배로 키워주고 해당 영역을 crop하여 training data를 구성한다.
     - Crop한 영역에서 object는 항상 중앙에 위치하고, 나머지 픽셀들은 모두 background이다.
   - Second stage
-    - [Edge Boxes](microsoft.com/en-us/research/publication/edge-boxes-locating-object-proposals-from-edges/)에서 제안한 방법으로 instance(proposal)를 생성하여 training data를 구성한다. (이때는 한 instance에 여러 class label이 있을 수 있다.)
+    - <a href="https://www.microsoft.com/en-us/research/publication/edge-boxes-locating-object-proposals-from-edges/" target="_blank" rel="noopener noreferrer">Edge Boxes</a>에서 제안한 방법으로 instance(proposal)를 생성하여 training data를 구성한다. (이때는 한 instance에 여러 class label이 있을 수 있다.)
     - First stage에서와 동일한 방법으로 local context를 포함시켜준다.
   - 위의 두 dataset에서 데이터 수가 부족한 class들에 대해서는 데이터를 중복해서 사용하는 방식으로 balance를 맞춰주었다.
   - Data augmentation 방법으로는 각 instance(proposal)를 250 $\times$ 250 크기로 변환한 다음 224 $\times$ 224 크기로 randomly crop하는 방식을 사용하였다.
