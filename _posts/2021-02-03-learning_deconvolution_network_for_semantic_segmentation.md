@@ -15,7 +15,7 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 # Abstract
 
-- Deconvolution Network(DeconvNet)는 **deconvolution** 및 **unpooling** layer로 구성된다.
+- DeconvNet의 deconvolution network는 **deconvolution** 및 **unpooling** layer로 구성된다.
 - 입력 이미지에 대해서 여러 **proposal**들을 생성하고, 이들을 입력으로 네트워크를 통과시켜 나온 결과들을 모두 합쳐서 최종 segmentation map을 생성한다.
 - 다음의 2가지 방법으로 Fully convolutional network(FCN)에서의 한계들을 보완하여 **detailed structure** 및 **multiple scale**의 object들을 다룰 수 있게 되었다.
   - Deep deconvolution network : detailed structure
