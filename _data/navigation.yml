@@ -19,6 +19,8 @@ papers-ko:
       url: /2021/01/24/fully_convolutional_networks_for_semantic_segmentation
     - title: Deconvolution Network (DeconvNet)
       url: /2021/02/03/learning_deconvolution_network_for_semantic_segmentation
+    - title: U-Net
+      url: /2021/02/08/u-net_convolutional_networks_for_biomedical_image_segmentation
   # - title: EECS 498/598
   #   children:
   #   - title:
