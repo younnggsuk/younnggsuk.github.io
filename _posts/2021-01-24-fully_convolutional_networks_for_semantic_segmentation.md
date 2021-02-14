@@ -237,7 +237,7 @@ Fully convolutional training의 경우, loss에 weight를 추가하는 방법으
 본 논문에서는 다음의 4가지 metric을 통해 성능을 평가하였다.
 
 - **pixel accuracy**
-  - $\sum_i n_{ii} / \sum_i t_i$ : class $i$로 예측한 픽셀 수 / class $i$의 전체 픽셀 수 
+  - $\sum_i n_{ii} / t_i$ : class $i$로 예측한 픽셀 수 / class $i$의 전체 픽셀 수 
 - **mean accuracy**
   - $(1/n_{cl}) \sum_i n_{ii} / t_i$ : pixel accuracy를 전체 클래스 수로 평균낸 것
 - **mean IU**
@@ -248,7 +248,7 @@ Fully convolutional training의 경우, loss에 weight를 추가하는 방법으
 위의 4가지 지표에서 사용된 각 항에 대한 설명은 다음과 같다.
 - IoU(IU)  
 ![IU](/assets/fully_convolutional_networks_for_semantic_segmentation/IU.png){:width="250px" style="border:1px solid black"}
-- $n_{ii}$ : class $j$로 예측된 class $i$를 가지는 픽셀의 수
+- $n_{ij}$ : class $j$로 예측된 class $i$를 가지는 픽셀의 수
 - $n_{cl}$ : 전체 클래스의 수
 - $t_i = \sum_j n_{ij}$ : class $i$의 총 픽셀 수
 
