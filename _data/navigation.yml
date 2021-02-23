@@ -21,6 +21,8 @@ papers-ko:
       url: /2021/02/03/learning_deconvolution_network_for_semantic_segmentation
     - title: U-Net
       url: /2021/02/08/u-net_convolutional_networks_for_biomedical_image_segmentation
+    - title: SegNet
+      url: /2021/02/14/segnet_a_deep_convolutional_encoder_decoder_architecture_for_image_segmentation
     - title: Pyramid Scene Parsing Network (PSPNet)
       url: /2021/02/20/pyramid_scene_parsing_network
     
