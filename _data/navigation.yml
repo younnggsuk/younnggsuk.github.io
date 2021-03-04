@@ -25,6 +25,8 @@ papers-ko:
       url: /2021/02/14/segnet_a_deep_convolutional_encoder_decoder_architecture_for_image_segmentation
     - title: Pyramid Scene Parsing Network (PSPNet)
       url: /2021/02/20/pyramid_scene_parsing_network
+    - title: DilatedNet
+      url: /2021/03/04/multi-scale_context_aggregation_by_dilated_convolutions
     
     
   # - title: EECS 498/598
