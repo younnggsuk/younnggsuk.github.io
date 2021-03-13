@@ -149,4 +149,4 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 - **Dilated convolution은 resolution의 손실 없이 receptive field를 확장**할 수 있으므로, dense prediction에 적절한 convolution 연산이다.
 - Dilated convolution을 적용한 **context module을 기존의 semantic segmentation 네트워크에 연결하여 성능을 향상**시킬 수 있다.
 - 기존의 semantic segmentation 네트워크에서 사용한 **classification network를 front-end module과 같이 수정하여 성능을 향상**시킬 수 있다.
-  - **Image classification을 위한 CNN 구조를 변형했다는 점이 기존 연구들과의 큰 차이점**이며, 새로운 연구의 가능성을 열어줌
+  - **Image classification을 위한 CNN 구조를 sementation에 적합한 구조로 재설계했다는 점이 기존 연구들과의 큰 차이점**이며, 새로운 연구의 가능성을 열어줌
