@@ -17,13 +17,13 @@ tags: Mathematics Linear&nbspAlgebra
 
 ![/assets/linear_algebra/ch1/gauss_elimination.png](/assets/linear_algebra/ch1/gauss_elimination.png){:style="border:1px solid black"}
 
-# LU Decompostion
+# LU Decomposition
 
-![/assets/linear_algebra/ch1/lu_decompostion.png](/assets/linear_algebra/ch1/lu_decompostion.png){:style="border:1px solid black"}
+![/assets/linear_algebra/ch1/lu_decomposition.png](/assets/linear_algebra/ch1/lu_decomposition.png){:style="border:1px solid black"}
 
-## LDU Decompostion
+## LDU Decomposition
 
-![/assets/linear_algebra/ch1/ldu_decompostion.png](/assets/linear_algebra/ch1/ldu_decompostion.png){:style="border:1px solid black"}
+![/assets/linear_algebra/ch1/ldu_decomposition.png](/assets/linear_algebra/ch1/ldu_decomposition.png){:style="border:1px solid black"}
 
 # Inverse
 
