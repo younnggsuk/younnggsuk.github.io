@@ -1,5 +1,5 @@
 ---
-title: "SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation"
+title: "[풀잎스쿨 14기] SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation"
 key: 20210214
 sidebar:
   nav: papers-ko
@@ -9,6 +9,9 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 <p align="center">
 <img src="/assets/segnet_a_deep_convolutional_encoder_decoder_architecture_for_image_segmentation/segnet_title.png" alt="segnet">
 </p>
+
+본 포스팅은 모두의연구소 (<a href="http://home.modulabs.co.kr/" target="_blank" rel="noopener noreferrer">home.modulabs.co.kr</a>) 풀잎스쿨에서 진행된 **'Semantic Segmentation 논문으로 입문하기'** 과정 내용을 공유 및 정리한 자료입니다.
+{:.success}
 
 이 글은 <a href="https://arxiv.org/abs/1511.00561" target="_blank" rel="noopener noreferrer">SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation</a> 논문을 읽고 정리한 것입니다. 이 글에 있는 대부분의 사진들은 논문에서 가져온 것임을 밝힙니다.
 {:.info}
