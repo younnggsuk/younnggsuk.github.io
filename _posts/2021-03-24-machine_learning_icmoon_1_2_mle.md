@@ -88,13 +88,17 @@ $$\begin{align*} \hat\theta &= argmax_\theta P(D|\theta) \\ &= argmax_\theta \th
 
 $$\begin{align*} \hat\theta &= argmax_\theta \ln\left( P(D|\theta) \right) \\ &= argmax_\theta \ln \left( \theta^{a_H} (1-\theta) ^{a_T} \right) \\ &= argmax_\theta \left( a_H \ln \theta + a_T \ln(1-\theta) \right) \end{align*}$$
 
-이제 위 식을 $\theta$에 대해 미분하면, 다음과 같이 $\theta$의 MLE 값인 $\hat\theta$를 구할 수 있다.
+이제 위 식을 $\theta$에 대해 미분하면, 다음과 같이 $\theta$의 MLE 값인 $\hat\theta$을 구할 수 있다.
 
 $$ \dfrac{d}{d\theta} \left( a_H \ln \theta + a_T \ln(1-\theta) \right) = \dfrac{a_H}{\theta} - \dfrac{a_T}{1-\theta} = 0 $$
 
-$$ \therefore \theta = \dfrac{a_H}{a_T + a_H} = \hat\theta$$
+$$ \therefore \hat\theta = \dfrac{a_H}{a_T + a_H} $$
 
-위 결과에 압정 실험에서의 값들을 대입하면, 우리가 직관적으로 생각한 결과(단순히 5번 던져서 3번 나왔으니까 $\dfrac{3}{5}$)와 동일한 결과가 나온다는 것을 알 수 있다.
+또한, 한번 더 미분한 결과를 살펴보면 다음과 같이 음의 값이 나와서 최댓값이라는 것을 알 수 있다.
+
+$$ \dfrac{d}{d\theta} \left( \dfrac{a_H}{\theta} - \dfrac{a_T}{1-\theta} \right) = - \dfrac{a_H}{\theta^2} - \dfrac{a_T}{(1-\theta)^2} \lt 0 $$
+
+$\hat\theta$식에 압정 실험에서의 값들을 대입하면, 우리가 직관적으로 생각한 결과(단순히 5번 던져서 3번 나왔으니까 $\dfrac{3}{5}$)와 동일한 결과가 나온다는 것을 알 수 있다.
 
 $$ \hat\theta = \dfrac{a_H}{a_T + a_H} = \dfrac{3}{2 + 3} = \dfrac{3}{5} $$
 
