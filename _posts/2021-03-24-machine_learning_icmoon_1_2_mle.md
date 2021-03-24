@@ -9,9 +9,7 @@ tags: ML/DL
 이 글은 카이스트 문일철 교수님의 [인공지능 및 기계학습 개론 1 강의](https://kooc.kaist.ac.kr/machinelearning1_17)를 듣고 정리한 것입니다.
 {:.info}
 
-# 1.2 MLE
-
-## Experience from trials
+# Experience from trials
 
 동전을 던졌을 때 앞면 또는 뒷면이 나올 확률을 생각하듯이, 압정을 던지는 경우를 생각해보자. 압정은 동전과 달리 양면이 대칭이 아니므로, 쉽게 떠올리기 어려울 것이다.
 
@@ -31,7 +29,7 @@ $$P(H) = \dfrac{3}{5} \\ P(T) = \dfrac{2}{5}$$
 
 그런데, 우리는 무슨 근거로 위의 두 확률을 구한 것일까?
 
-## Binomial Distribution
+# Binomial Distribution
 
 앞서 구한 두 확률이 어디서 온 것인지를 알기 위한 몇가지 개념들을 살펴보자.
 
@@ -51,7 +49,7 @@ $$P(H) = \dfrac{3}{5} \\ P(T) = \dfrac{2}{5}$$
 
 따라서, 압정 실험은 i.i.d condition에서 수행되었다고 볼 수 있다.
 
-## Maximum Likelihood Estimation
+# Maximum Likelihood Estimation
 
 이제 본격적으로 두 확률이 어디서 왔는지를 살펴보자.
 
@@ -74,7 +72,7 @@ $$P(D|\theta) = \theta^{a_H} (1-\theta)^{a_T}$$
 
 이는 "데이터를 가장 잘 나타내는 $\theta$를 어떻게 하면 찾을 수 있을까?"라는 질문과 동일하며, 이러한 $\theta$를 추정하는 기법을 Maximum Likelihood Estimation(MLE)라고 한다.
 
-### Maximum Likelihood Estimation of $\theta$ : $\hat\theta$
+## Maximum Likelihood Estimation of $\theta$ : $\hat\theta$
 
 MLE를 식으로 나타내면 다음과 같으며, 여기서의 $\hat\theta$는 $P(D\|\theta)$를 최대화하는 $\theta$값을 의미한다.
 
@@ -102,7 +100,7 @@ $$ \hat\theta = \dfrac{a_H}{a_T + a_H} = \dfrac{3}{2 + 3} = \dfrac{3}{5} $$
 
 정리하자면, 우리가 처음에 생각했던 확률 $\dfrac{3}{5}$이라는 값은 "MLE 관점에서 최적화된 $\theta$ 값"을 구한 것이며, MLE는 데이터(실험 결과)를 가장 잘 나타내는 $\theta$를 추정하는 기법을 의미한다.
 
-## Number of Trials
+# Number of Trials
 
 이번에는 다음과 같이 압정을 50번 던져서 H가 30번 나온 경우를 생각해보자.
 
@@ -116,7 +114,7 @@ $$ \hat\theta = \dfrac{a_H}{a_T + a_H} = \dfrac{30}{20 + 30} = \dfrac{3}{5} $$
 
 그렇다면, 더 많은 실험은 의미가 없는 것일까?
 
-### Simple Error Bound
+## Simple Error Bound
 
 많은 trial이 어떠한 의미를 가지는지에 대해서는 error bound를 표현하는 다음의 Hoeffding's inequality 식을 통해 알 수 있다.
 
