@@ -75,3 +75,10 @@ data_structure_algorithm-ko:
     children:
     - title: 알고리즘 성능 분석
       url: /2021/01/13/algorithm-1
+
+# Machine Learning
+machine_learning_icmoon-ko:
+  - title: 인공지능 및 기계학습 개론 1
+    children:
+    - title: 1.2 MLE
+      url: /2021/03/24/machine_learning_icmoon_1_2_mle
