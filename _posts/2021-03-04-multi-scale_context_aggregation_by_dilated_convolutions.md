@@ -1,5 +1,5 @@
 ---
-title: "[풀잎스쿨 14기] Multi-scale Context Aggregation by Dilated Convolutions"
+title: "Multi-scale Context Aggregation by Dilated Convolutions"
 key: 20210304
 sidebar:
   nav: papers-ko
@@ -9,9 +9,6 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 <p align="center">
 <img src="/assets/multi-scale_context_aggregation_by_dilated_convolutions/dilatednet_title.png" alt="dilatednet">
 </p>
-
-본 포스팅은 모두의연구소 (<a href="http://home.modulabs.co.kr/" target="_blank" rel="noopener noreferrer">home.modulabs.co.kr</a>) 풀잎스쿨에서 진행된 **'Semantic Segmentation 논문으로 입문하기'** 과정 내용을 공유 및 정리한 자료입니다.
-{:.success}
 
 이 글은 <a href="https://arxiv.org/abs/1511.07122" target="_blank" rel="noopener noreferrer">Multi-scale Context Aggregation by Dilated Convolutions</a> 논문을 읽고 정리한 것입니다. 이 글에 있는 대부분의 사진들은 논문에서 가져온 것임을 밝힙니다.
 {:.info}
