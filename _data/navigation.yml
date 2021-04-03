@@ -80,5 +80,5 @@ data_structure_algorithm-ko:
 machine_learning_icmoon-ko:
   - title: 인공지능 및 기계학습 개론 1
     children:
-    - title: 1.2 MLE
-      url: /2021/03/24/machine_learning_icmoon_1_2_mle
+    - title: 1. Motivations and Basics
+      url: /2021/04/03/machine_learning_icmoon_1
