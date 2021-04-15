@@ -56,9 +56,10 @@ tags: 논문 ML/DL Semantic&nbspSegmentation
 
 - **U-Net architecture**는 다음과 같이 구성된다. (*Figure 1*)
   - **Contracting path** (downsampling)
-    - 3$\times$3 convolution (padding X), batch normalization, ReLU
+    - 3$\times$3 convolution (padding X), ReLU
     - 2x2 max pooling (stride 2)
     - conv, max pool을 통한 각 downsampling step마다 output feature channel의 수는 2배가 된다.
+    - Contracting path의 마지막에 dropout 추가
   - **Expansive path** (upsampling)
     - 2$\times$2 up-convolution (transposed convolution)
       - Feature channel을 반으로 줄이고, **contracting path의 feature map을 concatenate**(copy and crop)
