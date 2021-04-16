@@ -181,7 +181,7 @@ $$\dfrac{a_H + \alpha - 1}{a_H + a_T + \alpha + \beta - 2} \rightarrow \dfrac{a_
   <img src="/assets/machine_learning_icmoon_1/ch1/conditional_probability.jpg" alt="conditional_probability" width="350px">
 </p>
 
-Event $B$가 일어났다는 가정 하에(condition) event $A$가 일어날 조건부 확률 $P(A\|B)$는 다음과 같이 구할 수 있다. 즉, 위 그림에서 (빨간색 빗금 영역) / (B의 영역)이다.
+Event $B$가 일어났다는 가정 하에(condition) event $A$가 일어날 조건부 확률 $P(A\|B)$는 다음과 같이 구할 수 있다. 위 그림에서 조건부 확률은 (빨간색 빗금 영역) / (B의 영역)에 해당하며, $P(A \cap B)$가 빨간색 빗금 영역이다.
 
 $$P(A|B) = \dfrac{P(A \cap B)}{P(B)}$$
 
