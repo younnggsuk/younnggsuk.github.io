@@ -82,3 +82,10 @@ machine_learning_icmoon-ko:
     children:
     - title: 1. Motivations and Basics
       url: /2021/04/03/machine_learning_icmoon_1
+
+# Effective Python
+effective_python-ko:
+  - title: 1장. 파이썬답게 생각하기
+    children:
+    - title: 1. 사용중인 파이썬의 버전을 알아두라
+      url: /2021/05/02/better_way_1
