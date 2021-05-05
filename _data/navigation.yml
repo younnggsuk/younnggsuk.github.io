@@ -91,3 +91,5 @@ effective_python-ko:
       url: /2021/05/02/better_way_1
     - title: 2. PEP 8 스타일 가이드를 따르라
       url: /2021/05/02/better_way_2
+    - title: 3. bytes와 str의 차이를 알아두라
+      url: /2021/05/05/better_way_3
