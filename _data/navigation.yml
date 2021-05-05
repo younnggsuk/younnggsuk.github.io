@@ -93,3 +93,5 @@ effective_python-ko:
       url: /2021/05/02/better_way_2
     - title: 3. bytes와 str의 차이를 알아두라
       url: /2021/05/05/better_way_3
+    - title: 4. f-string을 사용하자
+      url: /2021/05/05/better_way_4
