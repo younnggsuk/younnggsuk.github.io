@@ -9,6 +9,10 @@ header:
 
 # 논문
 papers-ko:
+  - title: Image Classification
+    children:
+    - title: ResNet
+      url: /2021/05/15/deep_residual_learning_for_image_recognition
   - title: Object Detection
     children:
     - title: YOLO
