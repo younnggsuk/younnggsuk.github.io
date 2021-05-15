@@ -27,7 +27,7 @@ tags: 논문 ML/DL Image&nbspClassification
 - 첫번째 vanishing / exploding gradients 문제는 normalized initilaization 및 batch normalization으로 네트워크가 수렴하도록 해결할 수 있었지만, 두번째 degradation 문제는 적절한 솔루션이 없었다.
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/fig_1.png" alt="fig_1" width="600px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/fig_1.png" alt="fig_1" width="600px" style="border:1px solid black">
 </p>
 
 - *Figure 1*은 degradation problem을 보여준다.
@@ -42,7 +42,7 @@ tags: 논문 ML/DL Image&nbspClassification
 
 <figure align="center">
   <p align="center">
-    <img src="/assets/deep_residual_learning_for_image_recognition/residual_block.png" alt="residual_block" border="1px solid black" width="700px">
+  <img src="/assets/deep_residual_learning_for_image_recognition/residual_block.png" alt="residual_block" border="1px solid black" width="700px">
   </p>
   <figcaption><i><a href="https://web.eecs.umich.edu/~justincj/teaching/eecs498/FA2019/schedule.html" target="_blank" rel="noopener noreferrer">그림 출처 : University of Michigan - EECS 498-007 / 598-005: Deep Learning for Computer Vision (2019) - Lecture 8 slide</a></i></figcaption>
 </figure>
@@ -72,7 +72,7 @@ $$ \mathbf{y} = \mathcal{F}(\mathbf{x}, \{W_i\}) + W_s\mathbf{x} \tag{2} $$
   - $\mathcal{F}(\mathbf{x}, \{W_i\})$ : residual mapping
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/fig_2.png" alt="fig_2" width="450px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/fig_2.png" alt="fig_2" width="450px" style="border:1px solid black">
 </p>
 
 - *Figure 2*를 예로 들어 더 구체적인 식으로 나타내면, 식 $(1)$과 $(2)$는 각각 다음과 같다. ($\sigma$는 ReLU)
@@ -84,7 +84,7 @@ $$ \mathbf{y} = W_2 \sigma(W_1\mathbf{x}) + W_s\mathbf{x} $$
 ## Network Architectures
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/fig_3.png" alt="fig_3" width="500px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/fig_3.png" alt="fig_3" width="500px" style="border:1px solid black">
 </p>
 
 ### Plain Network
@@ -132,17 +132,17 @@ $$ \mathbf{y} = W_2 \sigma(W_1\mathbf{x}) + W_s\mathbf{x} $$
 ## ImageNet Classification
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/table_1.png" alt="table_1" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/table_1.png" alt="table_1" style="border:1px solid black">
 </p>
 
 - *Table 1*은 본 논문에서 ImageNet 2012 dataset에서 실험한 architecture 구조들을 나타낸 것이다.
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/table_2.png" alt="table_2" width="500px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/table_2.png" alt="table_2" width="500px" style="border:1px solid black">
 </p>
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/fig_4.png" alt="fig_4" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/fig_4.png" alt="fig_4" style="border:1px solid black">
 </p>
 
 - *Table 2*와 *Figure 4*는 Plain networks와 ResNet을 18-layer, 34-layer로 학습시킨 후, 각각에 대해서 비교한 결과이다.
@@ -163,7 +163,7 @@ $$ \mathbf{y} = W_2 \sigma(W_1\mathbf{x}) + W_s\mathbf{x} $$
 ### Identity vs. Projection Shortcuts.
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/table_3.png" alt="table_3" width="500px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/table_3.png" alt="table_3" width="500px" style="border:1px solid black">
 </p>
 
 - *Table 3*은 다음의 3가지 모델에서 shortcut을 실험한 결과를 보여준다.
@@ -189,7 +189,7 @@ $$ \mathbf{y} = W_2 \sigma(W_1\mathbf{x}) + W_s\mathbf{x} $$
 - 본 논문에서는, **ResNet-34보다 더 깊은 네트워크에서 시간복잡도가 너무 높아지지 않도록** 하기 위해, **bottleneck design**을 사용하였다.
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/fig_5.png" alt="fig_5" width="500px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/fig_5.png" alt="fig_5" width="500px" style="border:1px solid black">
 </p>
 
 - *Figure 5*는 basic residual block(왼쪽)과 bottleneck block(오른쪽)을 비교해서 나타낸 것이다.
@@ -219,11 +219,11 @@ $$ \mathbf{y} = W_2 \sigma(W_1\mathbf{x}) + W_s\mathbf{x} $$
 #### Comparisons with State-of-the-art Methods
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/table_4.png" alt="table_4" width="500px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/table_4.png" alt="table_4" width="500px" style="border:1px solid black">
 </p>
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/table_5.png" alt="table_5" width="500px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/table_5.png" alt="table_5" width="500px" style="border:1px solid black">
 </p>
 
 - *Table 4*와 *Table 5*는 기존의 모델들과 ResNet의 성능을 각각 single-model, ensemble에서 비교한 것이다.
@@ -234,7 +234,7 @@ $$ \mathbf{y} = W_2 \sigma(W_1\mathbf{x}) + W_s\mathbf{x} $$
 ## CIFAR-10 and Analysis
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/cifar_10.png" alt="cifar_10" width="500px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/cifar_10.png" alt="cifar_10" width="500px" style="border:1px solid black">
 </p>
 
 - CIFAR-10 dataset에 실험한 모델은 총 $(1+6n) + 1 = 6n + 2$개의 stacked layer로 구성된다. (위 table 참고)
@@ -258,7 +258,7 @@ $$ \mathbf{y} = W_2 \sigma(W_1\mathbf{x}) + W_s\mathbf{x} $$
   - 4 pixel의 zero padding을 수행한 원본 이미지(또는 horizontal flip된 이미지)에서, $32\times32$ 크기로 random crop
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/fig_6.png" alt="fig_6" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/fig_6.png" alt="fig_6" style="border:1px solid black">
 </p>
 
 - *Figure 6*의 왼쪽, 중간 그래프는 plain network와 ResNet의 학습 결과를 나타낸 것이다.
@@ -267,7 +267,7 @@ $$ \mathbf{y} = W_2 \sigma(W_1\mathbf{x}) + W_s\mathbf{x} $$
     - ResNet-110의 경우, training error가 80% 이하로 내려갈 때(약 400 iter지점)까지 warm up learning rate 0.01로 학습한 후, 다시 0.1로 증가시켜 학습을 진행
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/table_6.png" alt="table_6" width="500px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/table_6.png" alt="table_6" width="500px" style="border:1px solid black">
 </p>
 
 - *Table 6*는 CIFAR-10 test set에서의 성능을 나타낸 것이다.
@@ -276,7 +276,7 @@ $$ \mathbf{y} = W_2 \sigma(W_1\mathbf{x}) + W_s\mathbf{x} $$
 ### Analysis of Layer Responses
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/fig_7.png" alt="fig_7" width="500px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/fig_7.png" alt="fig_7" width="500px" style="border:1px solid black">
 </p>
 
 - *Figure 7*은 각 layer의 response들에 대한 표준편차를 나타낸 것이다.
@@ -293,7 +293,7 @@ $$ \mathbf{y} = W_2 \sigma(W_1\mathbf{x}) + W_s\mathbf{x} $$
 ### Exploring Over 1000 layers
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/fig_6.png" alt="fig_6" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/fig_6.png" alt="fig_6" style="border:1px solid black">
 </p>
 
 - *Figure 6*의 오른쪽 그래프는 1202개의 layer($n=200$)로 구성된 매우 깊은 네트워크에서의 실험결과이며, 이를 통해 알 수 있는 것은 다음과 같다.
@@ -303,11 +303,11 @@ $$ \mathbf{y} = W_2 \sigma(W_1\mathbf{x}) + W_s\mathbf{x} $$
 ## Object Detection on PASCAL and MS COCO
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/table_7.png" alt="table_7" width="500px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/table_7.png" alt="table_7" width="500px" style="border:1px solid black">
 </p>
 
 <p align="center">
-  <img src="/assets/deep_residual_learning_for_image_recognition/table_8.png" alt="table_8" width="500px" style="border:1px solid black">
+<img src="/assets/deep_residual_learning_for_image_recognition/table_8.png" alt="table_8" width="500px" style="border:1px solid black">
 </p>
 
 - *Table 7*과 *Table 8*은 PASCAL VOC 2007 및 2012, MS COCO dataset에서 ResNet을 적용한 detection 모델을 실험한 결과이다.
