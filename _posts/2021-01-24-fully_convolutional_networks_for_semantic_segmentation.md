@@ -3,7 +3,7 @@ title: "Fully Convolutional Networks for Semantic Segmentation"
 key: 20210124
 sidebar:
   nav: papers-ko
-tags: 논문 ML/DL Semantic&nbspSegmentation
+tags: Papers Semantic&nbspSegmentation
 ---
 
 <p align="center">

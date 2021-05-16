@@ -3,7 +3,7 @@ title: "Pyramid Scene Parsing Network"
 key: 20210220
 sidebar:
   nav: papers-ko
-tags: 논문 ML/DL Semantic&nbspSegmentation
+tags: Papers Semantic&nbspSegmentation
 ---
 
 <p align="center">

@@ -3,7 +3,7 @@ title: "Deep Residual Learning for Image Recognition"
 key: 20210515
 sidebar:
   nav: papers-ko
-tags: 논문 ML/DL Image&nbspClassification
+tags: Papers Image&nbspClassification
 ---
 
 <p align="center">

@@ -3,7 +3,7 @@ title: "Multi-scale Context Aggregation by Dilated Convolutions"
 key: 20210304
 sidebar:
   nav: papers-ko
-tags: 논문 ML/DL Semantic&nbspSegmentation
+tags: Papers Semantic&nbspSegmentation
 ---
 
 <p align="center">

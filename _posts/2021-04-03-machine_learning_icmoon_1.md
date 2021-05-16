@@ -3,7 +3,7 @@ title: "1. Motivations and Basics"
 key: 20210403
 sidebar:
   nav: machine_learning_icmoon-ko
-tags: ML/DL 인공지능&nbsp및&nbsp기계학습&nbsp개론&nbsp1 Probability&nbspDistribution
+tags: Machine&nbspLearning 인공지능&nbsp및&nbsp기계학습&nbsp개론
 ---
 
 이 글은 카이스트 문일철 교수님의 <a href="https://kooc.kaist.ac.kr/machinelearning1_17" target="_blank" rel="noopener noreferrer">인공지능 및 기계학습 개론 1 강의</a>를 듣고 정리한 것이며, 몇가지 정의들은 위키피디아를 참고하였습니다.
