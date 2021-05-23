@@ -13,6 +13,8 @@ papers-ko:
     children:
     - title: ResNet
       url: /2021/05/15/deep_residual_learning_for_image_recognition
+    - title: DenseNet
+      url: /2021/05/23/densely_connected_convolutional_networks
   - title: Object Detection
     children:
     - title: YOLO
