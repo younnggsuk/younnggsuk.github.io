@@ -79,7 +79,7 @@ $$
 ### Growth rate
 
 - **DenseNet에서는 *growth rate*라고 부르는 hyperparameter $k$**가 있는데, 이는 다음과 같이 **출력 feature map의 수를 조절**하는 역할을 한다.
-  - Dense block의 $\ell$번째 layer의 입출력 feature map 수는 다음과 같다. (여기서 $k_0$는 dense block의 1번째 layer에 들어가는 입력의 채널 수를 의미)
+  - Dense block의 $\ell$번째 layer의 입출력 feature map 수는 다음과 같다. (여기서 $k_0$는 각 dense block의 1번째 layer에 들어가는 입력의 채널 수를 의미)
     - 입력 : $k_0 + k \times (\ell-1)$
     - 출력 : $k$
 - DenseNet은 아주 작은 $k$를 사용하여 아주 얕은 layer들로 구성되는데, 논문에서는 **아주 얕은 layer로 구성해도 DenseNet이 좋은 성능을 보이는 이유**를 다음과 같이 설명한다.
