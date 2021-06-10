@@ -88,16 +88,3 @@ machine_learning_icmoon-ko:
     children:
     - title: 1. Motivations and Basics
       url: /2021/04/03/machine_learning_icmoon_1
-
-# Effective Python
-effective_python-ko:
-  - title: 1장. 파이썬답게 생각하기
-    children:
-    - title: 1. 사용중인 파이썬의 버전을 확인하자
-      url: /2021/05/02/better_way_1
-    - title: 2. PEP 8 스타일 가이드를 따르자
-      url: /2021/05/02/better_way_2
-    - title: 3. bytes와 str의 차이를 알아두자
-      url: /2021/05/05/better_way_3
-    - title: 4. f-string을 사용하자
-      url: /2021/05/05/better_way_4
