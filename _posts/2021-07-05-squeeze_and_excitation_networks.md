@@ -13,8 +13,8 @@ tags: Papers Image&nbspClassification
 이 글은 <a href="https://arxiv.org/abs/1709.01507" target="_blank" rel="noopener noreferrer">Squeeze-and-Excitation Networks</a> 논문을 읽고 정리한 것입니다. 이 글에 있는 대부분의 사진들은 논문에서 가져온 것임을 밝힙니다.
 {:.info}
 
-<!-- 본 글을 바탕으로 직접 구현한 코드는 <a href="https://github.com/younnggsuk/CV-Paper-Implementation/tree/main/squeeze_and_excitation_networks" target="_blank" rel="noopener noreferrer">이곳</a>에서 확인하실 수 있습니다.
-{:.success} -->
+본 글을 바탕으로 직접 구현한 코드는 <a href="https://github.com/younnggsuk/CV-Paper-Implementation/tree/main/squeeze_and_excitation_networks" target="_blank" rel="noopener noreferrer">이곳</a>에서 확인하실 수 있습니다.
+{:.success}
 
 # Abstract
 
