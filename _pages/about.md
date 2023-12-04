@@ -33,8 +33,7 @@ Some topics I'm interested in are Domain Adaptation/Generalization, Meta Learnin
 - *2023.09. ~ Present*, **AI Researcher, at <a href="https://laonpeople.com/main/main.php">LAON PEOPLE</a>**  
   - **Developing machine vision solutions for manufacturing industry images:**  
     *(Active Learning, Out-of-Distribution Detection)*
-    - Apply out-of-distribution detection methods to enhance active learning performance.
-    - Conduct experiments with distribution shift scenarios to validate the performance of the solution.
+    - Applying out-of-distribution detection methods to enhance active learning performance.
 
 - *2022.02. ~ 2023.03.*, **AI Researcher, at <a href="https://www.ingradient.ai/en/">INGRADIENT</a>**  
   - **Developed vision inspection system for semiconductor images:**  
