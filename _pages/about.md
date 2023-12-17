@@ -19,7 +19,7 @@ redirect_from:
 
 # 👋🏻 About Me
 
-I’m Youngsuk Lee, an Applied AI Researcher.  
+I’m Youngsuk Lee, an AI Researcher.  
 Currently, I’m focusing on enabling vision models to adapt to or generalize unseen data more quickly.  
 Some topics I'm interested in are Domain Adaptation/Generalization, Meta Learning, Self-supervised Learning, and Active Learning.
 
