@@ -21,12 +21,13 @@ redirect_from:
 
 안녕하세요. 3년차 머신러닝 엔지니어 이영석입니다.  
 의료 및 제조 도메인의 영상 데이터를 이용한 ML/DL 모델 연구 및 개발 경험이 있으며, 사용자 경험에 기반한 실질적인 문제 해결을 위해 고민하고 있습니다.
-현재는 LLM 및 RAG 기술을 이용한 AI Assistant 솔루션을 개발하고 있으며, 모델 배포 및 동작 파이프라인 개선에 관심이 많아 백엔드 개발쪽으로 직무 영역을 확장하고 있습니다.
+현재는 LLM 및 RAG 기술을 이용한 AI Assistant 솔루션을 개발하고 있으며, 고려대학교 석사과정을 병행하며 자연어 정보를 활용해 영상 데이터에서의 한계를 극복하기 위한 연구를 진행하고 있습니다.
 
 # 💼 Experience
 
 - *2023.09. ~ 현재*, **ML Engineer, at <a href="https://laonpeople.com/main/main.php">LAON PEOPLE</a>**  
   - **AI Assistant 플랫폼 개발:**  
+    *(Language Model, Retrieval Augmented Generation)*
     - LLM 및 RAG 기술을 이용한 AI Assistant 플랫폼 개발
     - 사용자 대화 내용 정리 및 API 연동을 위한 OpenAI Structured Output 적용 및 JSON schema 생성 기능 개발
     - 사용자 문서 기반 semantic search 기능 개발을 위한 document parsing 및 vector database 구축 파이프라인 개발
@@ -74,6 +75,8 @@ redirect_from:
 # 🎓 Education
 
 - *2024.09. ~ 현재*, **고려대학교 의료정보학과 석사과정 재학 중**
+  *(Vision Language Model(VLM), Multiple Instance Learning)*
+  - Text-guided Multiple Instance Learning 관련 연구 진행 중
 - *2012.03. ~ 2020.08.*, **한국해양대학교 냉동공조에너지시스템공학 전공 학사 졸업**
 
 # 📖 Other Activities
