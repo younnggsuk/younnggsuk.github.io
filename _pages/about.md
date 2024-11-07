@@ -19,14 +19,14 @@ redirect_from:
 
 # 👋🏻 About Me
 
-I’m Youngsuk Lee, an ML Engineer passionate about data-driven solutions in the medical domain. My current focus is on deploying and optimizing ML/DL models for real-world applications to enhance user experience and solve practical challenges.
+I’m Youngsuk Lee, an ML Engineer passionate about data-driven solutions in the various domain. My current focus is on deploying and optimizing ML/DL models for real-world applications to enhance user experience and solve practical challenges.
 
-In addition to my professional work, I’m pursuing a Master’s degree at Korea University College of Medicine, where my research centers on text-guided vision models aimed at overcoming the limitations of current vision models.
+In addition to my work, I’m pursuing a Master’s degree at Korea University College of Medicine, where my research centers on text-guided vision models aimed at overcoming the limitations of current vision models.
 
 # 💼 Experience
 
 - *2023.09. ~ Present*, **ML Engineer, at <a href="https://laonpeople.com/main/main.php">LAON PEOPLE</a>**  
-  - **Developing a question-answering AI Assistant Solution:**
+  - **Developing a question-answering AI Assistant Solution:**  
     *(Large Language Models (LLM), Retrieval-Augmented Generation (RAG))*
     - Developing an AI Assistant Solution that can answer user questions based on various documents.
     - Utilizing Retrieval-Augmented Generation (RAG) and document parsing methods to enhance the model’s ability to generate responses based on document content.
