@@ -21,7 +21,7 @@ redirect_from:
 
 I’m Youngsuk Lee, an ML Engineer passionate about data-driven solutions in the various domain. My current focus is on deploying and optimizing ML/DL models for real-world applications to enhance user experience and solve practical challenges.
 
-In addition to my work, I’m pursuing a Master’s degree at Korea University College of Medicine, where my research centers on text-guided vision models aimed at overcoming the limitations of current vision models.
+In addition to my work, I’m pursuing a Master’s degree at Korea University, where my research centers on text-guided vision models aimed at overcoming the limitations of current vision models.
 
 # 💼 Experience
 
@@ -66,7 +66,7 @@ In addition to my work, I’m pursuing a Master’s degree at Korea University C
 
 # 🎓 Education
 
-- *2024.09. ~ Present*, **Korea University College of Medicine**
+- *2024.09. ~ Present*, **Korea University**
   - Master’s Student in Biomedical Informatics
 - *2012.03. ~ 2020.08.*, **Korea Maritime and Ocean University**
   - Bachelor’s Degree in Refrigeration and Air Conditioning Engineering
