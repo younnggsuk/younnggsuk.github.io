@@ -27,7 +27,7 @@ redirect_from:
 
 - *2023.09. ~ 현재*, **ML Engineer, at <a href="https://laonpeople.com/main/main.php">LAON PEOPLE</a>**  
   - **AI Assistant 플랫폼 개발:**  
-    *(Language Model, Retrieval Augmented Generation)*
+    *(Large Language Model(LLM), Retrieval Augmented Generation(RAG))*
     - LLM 및 RAG 기술을 이용한 AI Assistant 플랫폼 개발
     - 사용자 대화 내용 정리 및 API 연동을 위한 OpenAI Structured Output 적용 및 JSON schema 생성 기능 개발
     - 사용자 문서 기반 semantic search 기능 개발을 위한 document parsing 및 vector database 구축 파이프라인 개발
