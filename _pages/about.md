@@ -19,24 +19,26 @@ redirect_from:
 
 # 👋🏻 About Me
 
-I’m Youngsuk Lee, an AI Researcher.  
-Currently, I’m focusing on enabling vision models to adapt to or generalize unseen data more quickly.  
-Some topics I'm interested in are Domain Adaptation/Generalization, Meta Learning, Self-supervised Learning, and Active Learning.
+I’m Youngsuk Lee, an ML Engineer passionate about data-driven solutions in the medical domain. My current focus is on deploying and optimizing ML/DL models for real-world applications to enhance user experience and solve practical challenges.
+
+In addition to my professional work, I’m pursuing a Master’s degree at Korea University College of Medicine, where my research centers on text-guided vision models aimed at overcoming the limitations of current vision models.
 
 # 💼 Experience
 
-- *2023.11. ~ Present*, **Research Intern, at Korea University College of Medicine**
-  - **Researching meta-learning methods for digital pathology images:**  
-    *(Meta-Learning, Domain Adaptation/Generalization, Few-shot Learning)*
-    - Conducting research on various meta learning methods various meta-learning methods to quickly adapt or generalize to whole-slide image (WSI) scans from different hospitals.
-
-- *2023.09. ~ Present*, **AI Researcher, at <a href="https://laonpeople.com/main/main.php">LAON PEOPLE</a>**  
-  - **Developing machine vision solutions for manufacturing industry images:**  
+- *2023.09. ~ Present*, **ML Engineer, at <a href="https://laonpeople.com/main/main.php">LAON PEOPLE</a>**  
+  - **Developing a question-answering AI Assistant Solution:**
+    *(Large Language Models (LLM), Retrieval-Augmented Generation (RAG))*
+    - Developing an AI Assistant Solution that can answer user questions based on various documents.
+    - Utilizing Retrieval-Augmented Generation (RAG) and document parsing methods to enhance the model’s ability to generate responses based on document content.
+    - Design and implement a chat / rag pipeline to handle various situations, such as multi-turn conversations and citation-based responses.
+  
+  - **Developed machine vision solutions for manufacturing industry images:**  
     *(Active Learning, Out-of-Distribution Detection)*
-    - Applying out-of-distribution detection methods to enhance active learning performance.
+    - Developed a machine vision solution for the manufacturing industry to detect defects in various products.
+    - Conducting research on active learning and apply out-of-distribution detection methods to improve the model's performance with limited data.
 
-- *2022.02. ~ 2023.03.*, **AI Researcher, at <a href="https://www.ingradient.ai/en/">INGRADIENT</a>**  
-  - **Developed vision inspection system for semiconductor images:**  
+- *2022.02. ~ 2023.03.*, **ML Researcher, at <a href="https://www.ingradient.ai/en/">INGRADIENT</a>**  
+  - **Developed visual inspection system for semiconductor images:**  
     *(Self-supervised Learning, Active Learning, Image Classification)*
     - Developed an automatic visual inspection system for defect discrimination in a scenario with continually changing data and defect criteria.
     - Applied self-supervised learning to enhance generalizability and active learning for rapid adaptation to new data.
@@ -62,10 +64,16 @@ Some topics I'm interested in are Domain Adaptation/Generalization, Meta Learnin
   - Sehwan Moon\*, **Youngsuk Lee\***, Jeongyoung Hwang, Chul Gu Kim, Jong Woo Kim, Won Tae Yoon, and Jae Hui Kim  
   (\*:equal contribution)
 
+# 🎓 Education
+
+- *2024.09. ~ Present*, **Korea University College of Medicine**
+  - Master’s Student in Biomedical Informatics
+- *2012.03. ~ 2020.08.*, **Korea Maritime and Ocean University**
+  - Bachelor’s Degree in Refrigeration and Air Conditioning Engineering
+
 # 📖 Other Activities
 
-- *2021.12. ~ 2022.03.*, **Computer Vision Researcher, at <a href="https://modulabs.co.kr/product/hit-lab">HITLAB</a>**
+- *2021.12. ~ 2022.03.*, **ML Researcher, at <a href="https://modulabs.co.kr/product/hit-lab">HITLAB</a>**
   - **Study on human-in-the-loop systems with a focus on interactive segmentation.**  
     *(Interactive Segmentation, Human-in-the-loop)*
-    - Study on human-in-the-loop systems with a focus on interactive segmentation.
     - Implemented the interactive segmentation paper <a href="https://ieeexplore.ieee.org/abstract/document/8370732">DeepIGeoS</a> using PyTorch. [![](https://img.shields.io/github/stars/HITLAB-DeepIGeoS/DeepIGeoS?style=social&label=Stars)](https://github.com/HITLAB-DeepIGeoS/DeepIGeoS)
