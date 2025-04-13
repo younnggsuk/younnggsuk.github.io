@@ -49,7 +49,7 @@ Computer Vision, LLM 기반 RAG 및 Agent 시스템 등 다양한 AI 기술을 �
   - OOD Detection 알고리즘 구현 및 실험 설계, 기존 파이프라인에 통합 후, 성능 검증
   - 고객사 데이터 실험 결과, 기존 대비 Accuracy 및 F1-score 약 5~10% 향상된 성능을 확인
 
-## **Machine Learning Researcher, <a href="https://www.ingradient.ai/en/">INGRADIENT</a>**
+## **Machine Learning Researcher, <a href="https://www.ingradient.ai/">INGRADIENT</a>**
   ( *2022.02. ~ 2023.03., 1년 2개월* )
 
   > **반도체 불량 검사 AI 모델 학습 파이프라인 개발 (2022년 9월 ~ 2023년 2월, 총 6개월)**  
