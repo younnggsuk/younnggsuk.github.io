@@ -43,7 +43,7 @@ Computer Vision, LLM 기반 RAG 및 Agent 시스템 등 다양한 AI 기술을 �
   - 기존 retrieval 문서 출처 표기 방식을 prompting 및 structured output을 활용해 LLM generation pipeline에 통합, hallucination 감소 및 답변 신뢰도 개선
 
   > **비전 검사 솔루션 Active Learning 성능 개선 (2023년 9월 ~ 2023년 12월, 총 4개월)**  
-    *기존 Active Learning 파이프라인의 한계점을 분석하고 개선하여, Accuracy 및 F1-score 기준 약 5~10% 성능 향상*
+    *기존 Active Learning 파이프라인의 한계점을 개선하여, Accuracy 및 F1-score 기준 약 5~10% 성능 향상*
   - 비전 검사 솔루션에 탑재된 Active Learning 알고리즘의 성능 개선 업무 수행
   - 기존 파이프라인의 성능 검증 및 OOD(Out-of-Distribution) 샘플에 대한 한계점 파악
   - OOD Detection 알고리즘 구현 및 실험 설계, 기존 파이프라인에 통합 후, 성능 검증
