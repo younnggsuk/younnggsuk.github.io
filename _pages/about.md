@@ -19,61 +19,67 @@ redirect_from:
 
 # 👋🏻 About Me
 
-I’m Youngsuk Lee, an ML Engineer passionate about data-driven solutions in the various domain. My current focus is on deploying and optimizing ML/DL models for real-world applications to enhance user experience and solve practical challenges.
+I'm a Machine Learning Engineer, specializing in developing AI models applicable to real-world services in manufacturing and healthcare domains.  
+I have hands-on experience applying various AI technologies, including Computer Vision, LLM-based RAG, and Agent systems.  
+Currently, I'm pursuing a Master's degree at Korea University, integrating practical problem-solving skills with academic depth to achieve continuous growth in both industrial and research fields.
 
-In addition to my work, I’m pursuing a Master’s degree at Korea University, where my research centers on text-guided vision models aimed at overcoming the limitations of current vision models.
+# 💼 Work Experience
 
-# 💼 Experience
+## Machine Learning Engineer, [LAON PEOPLE](https://laonpeople.com/main/main.php)
+(*Sep 2023 ~ Present*)
 
-- *2023.09. ~ Present*, **ML Engineer, at <a href="https://laonpeople.com/main/main.php">LAON PEOPLE</a>**  
-  - **Developing a question-answering AI Assistant Solution:**  
-    *(Large Language Models (LLM), Retrieval-Augmented Generation (RAG))*
-    - Developing an AI Assistant Solution that can answer user questions based on various documents.
-    - Utilizing Retrieval-Augmented Generation (RAG) and document parsing methods to enhance the model’s ability to generate responses based on document content.
-    - Design and implement a chat / rag pipeline to handle various situations, such as multi-turn conversations and citation-based responses.
-  
-  - **Developed machine vision solutions for manufacturing industry images:**  
-    *(Active Learning, Out-of-Distribution Detection)*
-    - Developed a machine vision solution for the manufacturing industry to detect defects in various products.
-    - Conducting research on active learning and apply out-of-distribution detection methods to improve the model's performance with limited data.
+> **Improvement of AI Assistant Platform Performance using LLM Agents (Jan 2025 ~ Present)**  
+  *Achieved approximately a 25% accuracy improvement over the existing RAG by applying agent-based multi-step reasoning.*
+- Enhanced the existing RAG-based platform by adopting an LLM agent-based methodology.
+- Developed a LangGraph-based ReAct Agent and implemented reasoning-based multi-step search capabilities.
+- Conducted a PoC for classifying product code from manual of about 2,700 pages, achieving approximately 25% higher accuracy compared to the existing RAG approach.
+- Currently integrating MCP tools for expanding platforms such as Slack and Email, and conducting research related to multi-agent systems.
 
-- *2022.02. ~ 2023.03.*, **ML Researcher, at <a href="https://www.ingradient.ai/en/">INGRADIENT</a>**  
-  - **Developed visual inspection system for semiconductor images:**  
-    *(Self-supervised Learning, Active Learning, Image Classification)*
-    - Developed an automatic visual inspection system for defect discrimination in a scenario with continually changing data and defect criteria.
-    - Applied self-supervised learning to enhance generalizability and active learning for rapid adaptation to new data.
-  - **Developed semi-automatic labeling system for medical images:**  
-    *(Medical Image Segmentation, Interactive Segmentation)*
-    - Applied interactive segmentation algorithms to label 3D lesions with minimal user interactions.
-    - Utilized geodesic distance transform to effectively convey user interactions to the model, improving performance.
+> **Development of RAG-based AI Assistant Platform (Mar 2024 ~ Dec 2024, 10 months)**  
+  *Improved RAG performance based on client feedback, resulting in client contracts and platform launch.*
+- Joined as an initial team member to build a RAG pipeline and conducted research and development on the latest LLM and RAG technologies.
+- Developed an evaluation pipeline based on an LLM-as-a-judge method by monitoring user chat logs to quantify RAG performance.
+- Led client meetings to build a domain-specific synonym dictionary, applied Query Expansion, Hybrid Retrieval, and Reranking techniques to enhance search performance.
+- Integrated document-source citations into the LLM generation pipeline using prompting and structured output, reducing hallucinations and improving response reliability.
 
-- *2020.12. ~ 2021.12.*, **Learning Facilitator at <a href="https://modulabs.co.kr">MODULABS</a>**
-  - **Researched on predicting treatment outcomes in neovascular Age-related Macular Degeneration:**  
-    *(GAN, Image-to-Image Translation)*
-    - Conducted research projects aimed at predicting patient responses to treatment for neovascular age-related macular degeneration (AMD) in collaboration with Kim's Eye Hospital.
-    - Applied GAN-based Image-to-Image Translation methods with an attention mechanism to generate post-treatment images focusing on lesion areas.
-  - **Performed educational facilitation in AI education programs:**  
-    *(Learning Facilitation, Education)*
-    - Acted as a facilitator to help students understand AI, DL/ML basics and Python programming.
-    - Conducted a lecture on implementing computer vision research papers to enhance students' proficiency indeep learning frameworks.
+> **Active Learning Performance Improvement for Vision Inspection Solution (Sep 2023 ~ Dec 2023, 4 months)**  
+  *Analyzed and overcame limitations of the existing active learning pipeline, achieving a 5~10% improvement in Accuracy and F1-score.*
+- Enhanced the Active Learning algorithm performance embedded in vision inspection solutions.
+- Verified the performance of the existing pipeline and identified limitations regarding Out-of-Distribution (OOD) samples.
+- Implemented OOD detection algorithms, designed experiments, integrated improvements into the existing pipeline, and verified performance.
+- Customer data experiments demonstrated approximately a 5~10% improvement in Accuracy and F1-score.
 
-# 📄 Publications
+## Machine Learning Researcher, [INGRADIENT](https://www.ingradient.ai/)
+(*Feb 2022 ~ Mar 2023, 1 year 2 months*)
 
-- **Prediction of Anti-Vascular Endothelial Growth Factor Agent-specific Treatment Outcomes in Neovascular Age-Related Macular Degeneration Using a Generative Adversarial Network** \[[paper](https://www.nature.com/articles/s41598-023-32398-7)\]  
-  - **Scientific Reports** 2023  
-  - Sehwan Moon\*, **Youngsuk Lee\***, Jeongyoung Hwang, Chul Gu Kim, Jong Woo Kim, Won Tae Yoon, and Jae Hui Kim  
-  (\*:equal contribution)
+> **Development of AI Model Training Pipeline for Semiconductor Defect Inspection (Sep 2022 ~ Feb 2023, 6 months)**  
+  *Constructed a retraining pipeline capable of rapid model adaptation using Self-supervised Learning and Active Learning.*
+- Developed a retraining pipeline to quickly adapt to new semiconductor data when recipe changes occurred.
+- Applied Self-supervised Learning-based pre-training, improving generalization performance by approximately 20%.
+- Built an Active Learning-based retraining pipeline, reducing model training time and improving efficiency.
 
-# 🎓 Education
-
-- *2024.09. ~ Present*, **Korea University**
-  - Master’s Student in Biomedical Informatics
-- *2012.03. ~ 2020.08.*, **Korea Maritime and Ocean University**
-  - Bachelor’s Degree in Refrigeration and Air Conditioning Engineering
+> **Performance Improvement of Medical Image Semi-Automatic Labeling Solution (Feb 2022 ~ Sep 2022, 8 months)**  
+  *Improved labeling efficiency and reduced working time by upgrading labeling tasks from 2D to 3D volumes.*
+- Developed 3D semi-automatic labeling functionality to enhance existing 2D labeling solution performance.
+- Implemented a 3D volume labeling function using 3D Interactive Segmentation and Geodesic Distance Map based on user mouse input.
+- Developed a PyQT-based demo application and conducted operational tests, reducing labeling times for 3D MR and CT images.
 
 # 📖 Other Activities
 
-- *2021.12. ~ 2022.03.*, **ML Researcher, at <a href="https://modulabs.co.kr/product/hit-lab">HITLAB</a>**
-  - **Study on human-in-the-loop systems with a focus on interactive segmentation.**  
-    *(Interactive Segmentation, Human-in-the-loop)*
-    - Implemented the interactive segmentation paper <a href="https://ieeexplore.ieee.org/abstract/document/8370732">DeepIGeoS</a> using PyTorch. [![](https://img.shields.io/github/stars/HITLAB-DeepIGeoS/DeepIGeoS?style=social&label=Stars)](https://github.com/HITLAB-DeepIGeoS/DeepIGeoS)
+> **Research Project Participation in Ophthalmic Diseases (Aug 2021 ~ Dec 2022, 1 year 5 months)**  
+  *Conducted research on treatment outcome prediction models using GAN, resulting in a co-first author publication in an SCI journal.*
+- Collaborated with Kim's Eye Hospital to research treatment response predictions in patients with wet Age-related Macular Degeneration.
+- Trained an Image-to-Image translation GAN model to generate post-treatment images from pre-treatment images.
+- Improved generation quality of major lesion regions by applying an Attention mechanism, resulting in better qualitative evaluations by ophthalmologists.
+- Authored a paper published as co-first author in an SCI journal (Scientific Reports, 2023).
+
+# 📄 Publications
+
+- **Prediction of Anti-Vascular Endothelial Growth Factor Agent-specific Treatment Outcomes in Neovascular Age-Related Macular Degeneration Using a Generative Adversarial Network** [[paper](https://www.nature.com/articles/s41598-023-32398-7)]  
+  - **Scientific Reports** 2023  
+  - Sehwan Moon*, **Youngsuk Lee***, Jeongyoung Hwang, Chul Gu Kim, Jong Woo Kim, Won Tae Yoon, and Jae Hui Kim (*equal contribution)
+
+# 🎓 Education
+
+- *Sep 2024 ~ Present*, **Master’s Degree in Biomedical Informatics, Korea University**
+- *Mar 2012 ~ Aug 2020*, **Bachelor’s Degree in Refrigeration and Air Conditioning Engineering, Korea Maritime and Ocean University**
